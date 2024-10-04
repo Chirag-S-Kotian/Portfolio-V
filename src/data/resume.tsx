@@ -4,7 +4,7 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Chirag S Kotian",
   initials: "CK",
-  url: "https://chirags-portfolio.netlify.app",
+  url: "https://chirag-blockchian.vercel.app",
   location: "Udupi ,KARNATAKA - IN",
   locationLink: "https://www.google.com/maps/place/Udupi",
   description:
