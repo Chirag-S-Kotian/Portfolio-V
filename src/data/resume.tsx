@@ -41,6 +41,7 @@ export const DATA = {
     { href: "/", icon: HomeIcon, label: "Home" },
     // { href: "/blog", icon: NotebookIcon, label: "Blog" },
     { href: "/projects", icon: Icons.globe, label: "Projects" },
+    { href: "/resume", icon: Icons.dashboard, label: "Resume" },
   ],
   contact: {
     email: "ckotian117@gmail.com",

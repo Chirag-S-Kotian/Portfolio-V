@@ -13,6 +13,7 @@
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-switch": "^1.1.1",
     "@radix-ui/react-tooltip": "^1.0.7",
     "@tremor/react": "^3.18.3",
     "@types/mdx": "^2.0.13",
