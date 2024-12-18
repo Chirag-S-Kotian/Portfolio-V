@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon } from "lucide-react";
 
 export const DATA = {
   name: "Chirag S Kotian",
@@ -8,9 +8,9 @@ export const DATA = {
   location: "Udupi ,KARNATAKA - IN",
   locationLink: "https://www.google.com/maps/place/Udupi",
   description:
-    "Full Stack Blockchain Developer and Smart Contract Dev. I love building things and helping people. Very active on Twitter.",
+    "Full Stack Web Developer and DevOps Engineer. I love building things and helping people. Very active on Twitter.",
   summary:
-    "I am Full Stack Blockchain Dev, I am a Self thought Developer,who is learning Full stack web devlopement from 1-2 years from my college days, now i am dedicating my time and concentration towards learning Blockchain Development.I am a recent Graduate in Bachelor of Computer Application [B.C.A], now planning to Complete My Post-Graduation Master of Computer Application [M.C.A](/#education), my development journey was very good because of great and updated Content from Youtube,Thank You.",
+    "I am Full Stack Web Developer, I am a Self thought Developer,who is learning Full stack web devlopement from 1-2 years from my college days, now i am dedicating my time and concentration towards learning DevOps.I am a recent Graduate in Bachelor of Computer Application [B.C.A], now Pursuing My Post-Graduation Master of Computer Application [M.C.A](/#education), my development journey was very good because of great and updated Content from Youtube,Thank You.",
   avatarUrl: "/me1.jpeg",
   skills: [
     "HTML",
@@ -26,6 +26,24 @@ export const DATA = {
     "PostgreSQL",
     "MySQL",
     "MongoDB",
+    "AWS",
+    "Blockchain",
+    "Linux",
+    "Nginx",
+    "Shell Scripting",
+    "Docker",
+    "Kubernetes",
+    "Terraform",
+    "Ansible",
+    "Git",
+    "Jenkins",
+    "Prometheus",
+    "Grafana",
+    "Istio",
+    "Minikube",
+    "EC2",
+    "Vite",
+    "Redux",
     "Django",
     "Flask",
     "Prisma",
@@ -135,6 +153,44 @@ export const DATA = {
       image: "",
       video:
         "/P1.mp4",
+    },
+    {
+      title: "Cdrive",
+      href: "https://cdrive.vercel.app",
+      dates: "Aug 2024 - Oct 2024",
+      active: true,
+      description:
+        "Cdrive is a cloud storage platform that allows users to upload and access files from anywhere in the world.",
+      technologies: [
+        "Next.js 14",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Shadcn",
+        "nodemailer",
+        "multer",
+        "prisma",
+        "cloudinary",
+        "lucid-react",
+        "frmaer-motion",
+        "tailwindcss",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Chirag-S-Kotian/client",
+          icon: <Icons.github className="size-3" />,        
+        },
+        {
+          type: "Website",
+          href: "https://cdrive.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "/P5.mp4",
     },
     {
       title: "Flex Chat",
