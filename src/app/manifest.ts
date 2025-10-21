@@ -24,29 +24,13 @@ export default function manifest(): MetadataRoute.Manifest {
         src: "/icon-192.png",
         sizes: "192x192",
         type: "image/png",
-        purpose: "any maskable",
+        purpose: "maskable",
       },
       {
         src: "/icon-512.png",
         sizes: "512x512",
         type: "image/png",
-        purpose: "any maskable",
-      },
-    ],
-    screenshots: [
-      {
-        src: "/screenshot-desktop.png",
-        sizes: "1280x720",
-        type: "image/png",
-        form_factor: "wide",
-        label: "Desktop view of DevOps portfolio",
-      },
-      {
-        src: "/screenshot-mobile.png",
-        sizes: "390x844",
-        type: "image/png",
-        form_factor: "narrow",
-        label: "Mobile view of DevOps portfolio",
+        purpose: "maskable",
       },
     ],
     related_applications: [
