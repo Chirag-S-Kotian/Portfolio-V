@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "DevOps Engineer specializing in cloud infrastructure, automation, and containerization. Passionate about building scalable systems and optimizing deployment pipelines.",
   summary:
-    "I am a DevOps Engineer with expertise in cloud infrastructure, containerization, and automation. I specialize in designing and implementing CI/CD pipelines, managing cloud resources, and ensuring system reliability and scalability. With experience in AWS, Docker, Kubernetes, and infrastructure as code tools like Terraform and Ansible, I help organizations streamline their deployment processes and maintain robust, scalable systems. I am a recent Graduate in Bachelor of Computer Application [B.C.A], now Pursuing My Post-Graduation Master of Computer Application [M.C.A](/#education), with a strong focus on DevOps practices and cloud technologies.",
+    "I am a DevOps Engineer with expertise in cloud infrastructure, containerization, and automation. I specialize in designing and implementing CI/CD pipelines, managing cloud resources, and ensuring system reliability and scalability. With experience in AWS, Docker, Kubernetes, and infrastructure as code tools like Terraform and Ansible, I help organizations streamline their deployment processes and maintain robust, scalable systems. I am a recent Graduate in Bachelor of Computer Application [B.C.A](/#education), now Pursuing My Post-Graduation Master of Computer Application [M.C.A](/#education), with a strong focus on DevOps practices and cloud technologies.",
   avatarUrl: "/me1.jpeg",
   skills: [
     "AWS",

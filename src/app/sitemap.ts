@@ -3,17 +3,75 @@ import { getBlogPosts } from "@/data/blog";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://chiragdev.in";
+  const currentDate = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [
-    "",
-    "/projects",
-    "/resume",
-    "/blog",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: route === "" ? 1 : 0.7,
+    {
+      url: baseUrl,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/projects`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/resume`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+  ];
+
+  // Add dynamic project pages if they exist
+  const projectRoutes: MetadataRoute.Sitemap = [
+    "kubernetes-cluster-automation",
+    "aws-infrastructure-as-code",
+    "cicd-pipeline-jenkins",
+    "monitoring-observability-stack",
+    "devops-automation-scripts"
+  ].map((project) => ({
+    url: `${baseUrl}/projects/${project}`,
+    lastModified: currentDate,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
+  // Add skill-specific pages for better SEO
+  const skillRoutes: MetadataRoute.Sitemap = [
+    "aws-devops",
+    "kubernetes-expert",
+    "docker-containerization",
+    "terraform-infrastructure",
+    "jenkins-cicd",
+    "monitoring-grafana",
+    "cloud-security"
+  ].map((skill) => ({
+    url: `${baseUrl}/skills/${skill}`,
+    lastModified: currentDate,
+    changeFrequency: "monthly",
+    priority: 0.5,
+  }));
+
+  // Add location-based pages for local SEO
+  const locationRoutes: MetadataRoute.Sitemap = [
+    "devops-engineer-udupi",
+    "cloud-consultant-karnataka",
+    "devops-freelancer-india"
+  ].map((location) => ({
+    url: `${baseUrl}/location/${location}`,
+    lastModified: currentDate,
+    changeFrequency: "monthly",
+    priority: 0.4,
   }));
 
   const posts = await getBlogPosts();
@@ -24,7 +82,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...blogRoutes];
+  return [
+    ...staticRoutes,
+    ...projectRoutes,
+    ...skillRoutes,
+    ...locationRoutes,
+    ...blogRoutes,
+  ];
 }
 
 
