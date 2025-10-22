@@ -130,7 +130,7 @@ export const DATA = {
 
   education: [
     {
-      school: "PoornaPrajna Institute of Management,Udupi",
+      school: "Poornaprajna Institute of Management,Udupi",
       href: "https://github.com/Chirag-S-Kotian",
       degree: "Master's Degree of Computer Application (M.C.A)",
       logoUrl: "/clg1.jpeg",
@@ -138,7 +138,7 @@ export const DATA = {
       end: "2026",
     },
     {
-      school: "ShreeDevi College of Information Science,Mangalore",
+      school: "Shree Devi College of Information Science,Mangalore",
       href: "https://www.linkedin.com/in/Chirag-S-Kotian",
       degree: "Bachelor's Degree of Computer Application (B.C.A)",
       logoUrl: "/clg3.jpeg",
@@ -464,17 +464,12 @@ export const DATA = {
         "Random Recipe Generation",
         "Recipe Details",
         "Cross-browser Compatibility",
-        "Mobile-first Design",
         "User Interface Design",
         "Web APIs",
         "Fetch API",
         "JSON Data Handling",
-        "Dynamic Content Loading",
         "Recipe Search",
         "Food API",
-        "Interactive Cards",
-        "User Experience",
-        "Web Standards",
       ],
       links: [
         {

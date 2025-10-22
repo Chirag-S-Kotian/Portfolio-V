@@ -137,15 +137,14 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
+                Ready to collaborate? Feel free to reach out{" "}
                 <Link
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on twitter
+                  on Twitter/X
                 </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                for DevOps consulting, infrastructure automation, or full-stack development projects. I&apos;m always excited to discuss innovative solutions and new opportunities!
               </p>
             </div>
           </BlurFade>
