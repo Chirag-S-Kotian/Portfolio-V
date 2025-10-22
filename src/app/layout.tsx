@@ -256,6 +256,35 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        <noscript>
+          <div style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: '#000',
+            color: '#fff',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 9999,
+            textAlign: 'center',
+            padding: '20px',
+            fontFamily: 'system-ui, -apple-system, sans-serif'
+          }}>
+            <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>JavaScript Required</h1>
+            <p style={{ fontSize: '1.1rem', marginBottom: '2rem', maxWidth: '600px' }}>
+              This portfolio website requires JavaScript to function properly. Please enable JavaScript in your browser settings to view the full experience.
+            </p>
+            <div style={{ fontSize: '1rem', opacity: 0.8 }}>
+              <p><strong>Chirag S Kotian</strong> - DevOps Engineer & Full Stack Developer</p>
+              <p>Email: ckotian117@gmail.com</p>
+              <p>GitHub: <a href="https://github.com/Chirag-S-Kotian" style={{ color: '#fff', textDecoration: 'underline' }}>github.com/Chirag-S-Kotian</a></p>
+            </div>
+          </div>
+        </noscript>
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
             {children}
