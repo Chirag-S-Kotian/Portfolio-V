@@ -433,6 +433,11 @@ export const DATA = {
           href: "https://github.com/Chirag-S-Kotian/infragen",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "Website",
+          href: "https://infra-mind-forge.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
       ],
       image: "/infragen.png",
       video: "",
