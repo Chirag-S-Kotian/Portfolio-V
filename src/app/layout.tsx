@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
-// import { Analytics } from "@vercel/analytics/react"
-// import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -17,21 +17,31 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: `${DATA.name} - DevOps Engineer | Cloud Infrastructure & Automation Specialist`,
-    template: `%s | ${DATA.name} - DevOps Engineer`,
+    default: `Chirag S Kotian - DevOps Engineer & Full Stack Developer | Multi-Cloud Expert`,
+    template: `%s | Chirag S Kotian - DevOps Engineer`,
   },
-  description: `${DATA.description} Expert in AWS, Kubernetes, Docker, Terraform, and CI/CD pipelines. Available for DevOps consulting and cloud infrastructure projects.`,
+  description: `Chirag S Kotian - DevOps Engineer & Full Stack Developer specializing in multi-cloud infrastructure (AWS, GCP, Azure), automation, and modern web development. Expert in building scalable systems and optimizing deployment pipelines across cloud platforms.`,
   keywords: [
+    "Chirag S Kotian",
+    "Chirag Kotian",
+    "Chirag S Kotian DevOps",
+    "Chirag Kotian Engineer",
+    "Chirag S Kotian India",
+    "Chirag Kotian Udupi",
+    "Chirag S Kotian Karnataka",
     "DevOps Engineer",
+    "Full Stack Developer",
     "Cloud Infrastructure",
     "AWS",
+    "Google Cloud Platform",
+    "Microsoft Azure",
     "Kubernetes",
     "Docker",
     "Terraform",
     "Ansible",
     "CI/CD",
     "Jenkins",
-    "GitLab",
+    "GitLab CI/CD",
     "GitHub Actions",
     "Prometheus",
     "Grafana",
@@ -44,21 +54,44 @@ export const metadata: Metadata = {
     "Linux",
     "Shell Scripting",
     "Python",
-    "Monitoring",
-    "Logging",
-    "Auto Scaling",
-    "Load Balancing",
+    "JavaScript",
+    "TypeScript",
+    "Node.js",
+    "React",
+    "Next.js",
+    "Express.js",
+    "MongoDB",
+    "PostgreSQL",
+    "MySQL",
+    "API Development",
+    "RESTful APIs",
+    "GraphQL",
+    "Web Development",
+    "Frontend Development",
+    "Backend Development",
+    "Database Design",
+    "System Architecture",
+    "Software Engineering",
+    "Agile Development",
+    "Scrum",
+    "Multi-Cloud Architecture",
     "Cloud Migration",
-    "Site Reliability Engineering",
-    "SRE",
-    "Cloud Architecture",
-    "System Administration",
+    "Cost Optimization",
+    "Disaster Recovery",
+    "Backup Solutions",
     "Udupi",
     "Karnataka",
     "India",
     "Remote Work",
     "Freelance DevOps",
-    "Cloud Consultant"
+    "Cloud Consultant",
+    "Full Stack Engineer",
+    "Software Developer",
+    "Tech Professional",
+    "IT Professional",
+    "Computer Science",
+    "MCA Student",
+    "BCA Graduate"
   ],
   authors: [{ name: DATA.name, url: DATA.url }],
   creator: DATA.name,
@@ -69,10 +102,10 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: `${DATA.name} - DevOps Engineer | Cloud Infrastructure Specialist`,
-    description: `${DATA.description} Expert in AWS, Kubernetes, Docker, and automation. Available for DevOps consulting.`,
+    title: `Chirag S Kotian - DevOps Engineer & Full Stack Developer | Multi-Cloud Expert`,
+    description: `Chirag S Kotian - DevOps Engineer & Full Stack Developer specializing in multi-cloud infrastructure (AWS, GCP, Azure), automation, and modern web development. Expert in building scalable systems.`,
     url: DATA.url,
-    siteName: `${DATA.name} - DevOps Engineer`,
+    siteName: `Chirag S Kotian - DevOps Engineer & Full Stack Developer`,
     locale: "en_US",
     type: "website",
     images: [
@@ -80,15 +113,15 @@ export const metadata: Metadata = {
         url: `${DATA.url}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: `${DATA.name} - DevOps Engineer Portfolio`,
+        alt: `Chirag S Kotian - DevOps Engineer & Full Stack Developer Portfolio`,
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${DATA.name} - DevOps Engineer`,
-    description: `${DATA.description} Expert in cloud infrastructure and automation.`,
+    title: `Chirag S Kotian - DevOps Engineer & Full Stack Developer`,
+    description: `DevOps Engineer & Full Stack Developer specializing in multi-cloud infrastructure and modern web development.`,
     creator: "@Chirag_S_kotian",
     images: [`${DATA.url}/og-image.jpg`],
   },
@@ -132,42 +165,75 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": DATA.name,
+  "name": "Chirag S Kotian",
+  "alternateName": ["Chirag Kotian", "Chirag S Kotian DevOps", "Chirag Kotian Engineer"],
   "url": DATA.url,
   "image": `${DATA.url}${DATA.avatarUrl}`,
-  "description": DATA.description,
-  "jobTitle": "DevOps Engineer",
+  "description": "Chirag S Kotian - DevOps Engineer & Full Stack Developer specializing in multi-cloud infrastructure, automation, and modern web development",
+  "jobTitle": ["DevOps Engineer", "Full Stack Developer", "Cloud Infrastructure Specialist"],
   "worksFor": {
     "@type": "Organization",
-    "name": "Freelance DevOps Consultant"
+    "name": "Freelance DevOps & Full Stack Developer"
   },
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Udupi",
     "addressRegion": "Karnataka",
-    "addressCountry": "IN"
+    "addressCountry": "IN",
+    "postalCode": "574116"
   },
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": DATA.contact.tel,
     "contactType": "Professional",
-    "email": DATA.contact.email
+    "email": DATA.contact.email,
+    "availableLanguage": "English"
   },
   "sameAs": [
     DATA.contact.social.GitHub.url,
     DATA.contact.social.LinkedIn.url,
-    DATA.contact.social.X.url
+    DATA.contact.social.X.url,
+    DATA.url
   ],
   "knowsAbout": DATA.skills,
   "alumniOf": DATA.education.map(edu => ({
     "@type": "EducationalOrganization",
-    "name": edu.school
+    "name": edu.school,
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Udupi",
+      "addressRegion": "Karnataka",
+      "addressCountry": "IN"
+    }
   })),
-  "hasOccupation": {
-    "@type": "Occupation",
-    "name": "DevOps Engineer",
-    "description": "Specializes in cloud infrastructure, automation, and containerization",
-    "skills": DATA.skills
+  "hasOccupation": [
+    {
+      "@type": "Occupation",
+      "name": "DevOps Engineer",
+      "description": "Specializes in cloud infrastructure, automation, and containerization",
+      "skills": DATA.skills.filter(skill => 
+        skill && ["AWS", "Google Cloud Platform", "Microsoft Azure", "Docker", "Kubernetes", "Terraform", "Ansible", "Jenkins", "CI/CD", "DevSecOps"].includes(skill)
+      )
+    },
+    {
+      "@type": "Occupation",
+      "name": "Full Stack Developer",
+      "description": "Specializes in modern web development and software engineering",
+      "skills": DATA.skills.filter(skill => 
+        skill && ["JavaScript", "TypeScript", "Node.js", "React", "Next.js", "Express.js", "MongoDB", "PostgreSQL", "MySQL", "API Development"].includes(skill)
+      )
+    }
+  ],
+  "nationality": "Indian",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Udupi, Karnataka, India"
+  },
+  "award": [],
+  "memberOf": [],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Chirag S Kotian Portfolio"
   }
 };
 
@@ -193,8 +259,8 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
             {children}
-            {/* <SpeedInsights />
-            <Analytics /> */}
+            <SpeedInsights />
+            <Analytics />
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>

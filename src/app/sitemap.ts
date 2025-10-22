@@ -46,6 +46,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
+  // Add name-specific pages for better personal branding
+  const nameRoutes: MetadataRoute.Sitemap = [
+    "chirag-s-kotian",
+    "chirag-kotian-devops",
+    "chirag-kotian-engineer",
+    "chirag-s-kotian-india",
+    "chirag-kotian-udupi",
+    "chirag-s-kotian-karnataka"
+  ].map((name) => ({
+    url: `${baseUrl}/about/${name}`,
+    lastModified: currentDate,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
   // Add skill-specific pages for better SEO
   const skillRoutes: MetadataRoute.Sitemap = [
     "aws-devops",
@@ -54,7 +69,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "terraform-infrastructure",
     "jenkins-cicd",
     "monitoring-grafana",
-    "cloud-security"
+    "cloud-security",
+    "full-stack-developer",
+    "react-developer",
+    "nodejs-developer",
+    "multi-cloud-expert"
   ].map((skill) => ({
     url: `${baseUrl}/skills/${skill}`,
     lastModified: currentDate,
@@ -85,6 +104,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     ...staticRoutes,
     ...projectRoutes,
+    ...nameRoutes,
     ...skillRoutes,
     ...locationRoutes,
     ...blogRoutes,
